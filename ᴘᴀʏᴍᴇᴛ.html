@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment by Rixxe Market</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .qris {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .qris img {
+      width: 200px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .qris img:hover {
+      transform: scale(1.05);
+    }
+    .warning {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .payment-method {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .payment-method h3 {
+      margin-top: 0;
+    }
+    .button-copy {
+      display: inline-block;
+      background: #357edd;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="qris">
+      <a href="https://img1.pixhost.to/images/6986/618719056_ekaa.jpg" target="_blank">
+        <img src="https://img1.pixhost.to/images/6986/618719056_ekaa.jpg" alt="QRIS Pembayaran">
+      </a>
+      <p>SCAN QRIS EKAATZY<br><small></small></p>
+    </div>
+    <div class="warning">
+     WAJIB DISERTAKAN BUKTI PEMBAYARAN.<br>
+      <strong style="color:red;">tidak ada bukti pembayaran? tidak kami layani</strong>
+    </div>
+    <div class="payment-method">
+      <h3>DANA</h3>
+      <p><strong>NOMOR :</strong> <span id="dana-number">085814067706</span><br>
+      <strong>ATAS NAMA :</strong> YUNIARTI</p>
+      <div class="button-copy" onclick="copyText('dana-number')">Copy Number</div>
+    </div>
+    <div class="payment-method">
+      <h3>GOPAY</h3>
+      <p><strong>NOMOR :</strong> <span id="gopay-number">081385292922</span><br>
+      <strong>ATAS NAMA :</strong> EKAA JIR</p>
+      <div class="button-copy" onclick="copyText('gopay-number')">Copy Number</div>
+ </div>
+  </script>
+</body>
+</html>
